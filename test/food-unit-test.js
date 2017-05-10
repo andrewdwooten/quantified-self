@@ -48,7 +48,7 @@ describe('Food', () => {
   it('create function returns empty array if food not created', (done) =>{
       Food.create('Banana', 75).then((food)=>{
         assert.typeOf(food, 'array')
-        assert.equal(food.length, 0)
+        assert.equal(food.length, 0) 
       })
     done()
   })
